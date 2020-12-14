@@ -1,0 +1,71 @@
+GET https://localhost:2113/stats
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+
+###
+
+GET https://localhost:2113/version
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+
+###
+
+GET https://localhost:2113/projections/all-non-transient
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+
+###
+
+GET https://localhost:2113/info
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+
+###
+
+GET https://localhost:2113/subscriptions
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+
+###
+
+GET https://localhost:2113/gossip
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+
+###
+
+GET https://localhost:2113/streams/test-stream
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+Accept: application/json
+
+###
+
+GET https://localhost:2113/streams/$persistentsubscription-test-stream::group1-parked
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+Accept: application/json
+
+###
+
+GET https://localhost:2113/streams/$persistentsubscription-test-stream::group1-parked/metadata
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+Accept: application/json
+
+
+###
+
+GET https://localhost:2113/streams/%24persistentsubscription-test-stream::group1-parked/head/backward/1
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+Accept: application/json
+
+###
+
+GET https://localhost:2113/streams/$persistentsubscription-test-stream::group1-parked/0/forward/1
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+Accept: application/json
+
+###
+
+GET https://localhost:2113/streams/test-stream/131/forward/20?embed=body
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+Accept: application/json
+
+###
+
+GET https://localhost:2113/streams/test-stream
+Authorization: Basic YWRtaW46Y2hhbmdlaXQ=
+Accept: application/json
+
